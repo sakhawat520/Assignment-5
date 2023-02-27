@@ -80,14 +80,14 @@
 
             if ($_SERVER['REQUEST_METHOD'] === 'POST') {
           
-            $name1 = $_POST['name'];
-            $email1 = $_POST['email'];
+            $name = $_POST['name'];
+            $email = $_POST['email'];
 
-            $person1 = new Person();
+            $person = new Person();
 
            
-            $person1->setName($name1);
-            $person1->setEmail($email1);
+            $person->setName($name);
+            $person->setEmail($email);
         }
 
         
@@ -95,11 +95,11 @@
         </br>
         <div class="form-group">
                 <label>Name: </label>
-                <?php echo $person1->getName() ?>
+                <?php echo $person->getName(); ?>
             </div>
             <div class="form-group">
                 <label>Email Address: </label>
-                <?php echo $person1->getEmail()?>
+                <?php echo $person->getEmail();?>
             </div>
     </div>
   </div>
